@@ -1,0 +1,22 @@
+$primary: #038aff;
+$secondary: #e1e8f0;
+$warning: #febd3d;
+$success: #5ccaa7;
+$dark: #161348;
+$white: #fafafa;
+$black: #000000;
+
+$body-color: #152d5b;
+
+$grid-gutter-width: 1rem;
+
+$secondary25 : rgba($secondary, 0.25);
+
+$gradient-secondary : linear-gradient(90deg, rgba($secondary, 0.2) 0%, rgba($secondary, 1) 33%, rgba($secondary, 1) 66%, rgba($secondary, 0.2) 100%);
+
+$border-radius : 0.5rem;
+$border-radius-sm : 0.3rem;
+$border-radius-lg : 4rem;
+
+$heading-font-family : "roc-grotesk-wide",sans-serif;
+$body-font-family : "sofia-pro-soft",sans-serif;

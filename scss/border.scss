@@ -1,0 +1,33 @@
+.border-gradient {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $gradient-secondary;
+        width: 100%;
+        height: 1px;
+    }
+
+    &.border-opacity-25::before {
+        opacity: 0.25;
+    }
+}
+
+.rounded {
+    border-radius: $border-radius !important;
+}
+
+.rounded-top-right-lg {
+    border-top-right-radius: $border-radius-lg !important;
+}
+
+.rounded-bottom-right-lg {
+    border-bottom-right-radius: $border-radius-lg !important;
+}
+
+.rounded-bottom-left-lg {
+    border-bottom-left-radius: $border-radius-lg !important;
+}

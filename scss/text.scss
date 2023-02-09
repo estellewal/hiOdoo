@@ -1,0 +1,110 @@
+* {
+    font-family: $body-font-family;
+    font-weight: 300;
+}
+
+h1,
+h2,
+h3 {
+    font-family: $heading-font-family;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+h6 {
+    font-family: $body-font-family;
+    font-weight: 400;
+}
+
+button,
+button *,
+a,
+a * {
+    font-weight: 400;
+}
+
+
+@media (min-width: 992px) {
+    .text-size-fit {
+        font-size: 2.1vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    .text-size-fit {
+        font-size: 1.7vw;
+    }
+}
+
+.text-body-50 {
+    color: $body-color;
+    opacity: 50%;
+}
+
+.text-size-xl {
+    font-size: 1.6rem;
+}
+
+.text-size-lg {
+    font-size: 1.2rem;
+}
+
+.text-size-sm {
+    font-size: 0.8rem;
+}
+
+.text-size-xs {
+    font-size: 0.6rem;
+    line-height: 0.6rem;
+}
+
+.text-underline-dash {
+    border-bottom: 1px dashed $primary;
+}
+
+.text-underline-solid {
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid $primary;
+
+    &.text-dark {
+        border-bottom: 2px solid $dark;
+
+        &:hover {
+            color: $primary !important;
+            border-bottom-color: $primary;
+        }
+    }
+
+    &.text-size-sm {
+        font-weight: 400;
+        padding-bottom: 0.3rem;
+    }
+
+    &:hover {
+        color: $dark !important;
+        text-decoration: none;
+        border-bottom-color: $dark;
+    }
+}
+
+a.text-primary.text-underline-dash:hover,
+a.text-primary.text-underline-dash:hover>* {
+    color: $dark !important;
+    text-decoration: none;
+    border-bottom-color: $dark;
+}
+
+a.text-dark {
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        padding-bottom: 0.2rem;
+        color: $blue !important;
+        text-decoration: none;
+        border-bottom: 2px solid $primary;
+
+    }
+}

@@ -1,0 +1,221 @@
+@import url("https://use.typekit.net/oji3sck.css");
+@import "./text.scss";
+@import "./buttons.scss";
+@import "./border.scss";
+@import "./accordion.scss";
+
+
+
+.bi-chevron-right {
+    font-size: 0.6rem;
+}
+
+.active {
+    font-weight: 400;
+}
+
+
+.bg-dark {
+    background-color: $dark;
+}
+
+.bg-black {
+    background-color: $black;
+}
+
+.bg-secondary-25 {
+    background-color: $secondary25 !important;
+}
+
+
+.badge {
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.2rem 0.6rem;
+}
+
+.credit-card {
+    aspect-ratio: 3/2;
+    background-image: url("/src/credit-card-background.svg");
+    background-size: cover;
+}
+
+.card {
+    border-radius: $border-radius;
+
+    .rounded-circle {
+        height: 1.5rem;
+        width: 1.5rem;
+        justify-content: center;
+        align-items: center;
+
+        &.circle-lg {
+            height: 2rem;
+            width: 2rem;
+        }
+
+        &.circle-xl {
+            height: 3.5rem;
+            width: 3.5rem;
+        }
+    }
+}
+
+.projects {
+
+    .card {
+        width: 80%;
+        margin-top: 4rem;
+    }
+
+    .card-video {
+        top: 0;
+        right: 3rem;
+        width: 45%;
+    }
+}
+
+
+
+.video-player {
+    position: relative;
+
+    button {
+        position: absolute;
+        top: 0.75rem;
+
+        &.btn-player-right {
+            right: 0.75rem;
+        }
+
+        &.btn-player-left {
+            left: 0.75rem;
+        }
+    }
+}
+
+.bottom-container {
+
+    &>div>.row {
+        margin: 6rem 0;
+    }
+}
+
+
+.container-awards {
+
+    overflow-x: scroll;
+
+    .awards {
+        overflow: visible;
+
+        > :nth-child(odd) {
+            margin-top: 4rem;
+        }
+
+        a {
+            text-decoration: none;
+
+
+            .card {
+                transition: all 0.2s ease-in-out;
+            }
+
+            &:hover {
+                .card {
+                    z-index: 1060;
+                    transform: rotate(10deg) scale(1.15);
+                }
+
+                .text-underline-solid {
+                    color: $primary !important;
+                    border-color: $primary;
+                }
+            }
+        }
+
+    }
+}
+
+
+
+footer {
+    a:hover {
+        text-decoration: none;
+    }
+
+    a.text-white-50 {
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            color: $white !important;
+        }
+    }
+}
+
+.t-slope {
+    position: relative;
+    overflow: hidden;
+    padding-top: 1.5rem;
+
+    &::before {
+        content: '';
+        width: 200%;
+        height: 6rem;
+        position: absolute;
+        top: -3rem;
+        left: -50%;
+        transform: rotate(-3deg);
+    }
+
+    &.slope-primary::before {
+        background-color: $primary;
+    }
+
+    &.slope-light::before {
+        background-color: $white;
+    }
+
+    &.slope-secondary-25::before {
+        background-color: $secondary25;
+    }
+}
+
+.container-quarter-circle {
+    position: relative;
+
+    .quarter-circle {
+        position: absolute;
+        width: 10rem;
+        height: 10rem;
+        fill: none;
+        stroke: $secondary;
+        stroke-width: 4px;
+        stroke-linecap: round;
+        stroke-dasharray: 1rem;
+        z-index: -1000;
+
+        &.circle-left {
+            bottom: -8rem;
+            left: 30vw;
+        }
+
+        &.circle-right {
+            bottom: -8rem;
+            right: 30vw;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .quarter-circle {
+
+            &.circle-left {
+                left: 25vw;
+            }
+
+            &.circle-right {
+                right: 25vw;
+            }
+        }
+    }
+}

@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hello Odoo's Web Design Team!</title>
+    <link rel="icon" type="image/x-icon" href="/src/favicon.png">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/dist/custom.css">
+</head>
+
+<body>
+    <div class="container-fluid bg-primary">
+        <div class="row">
+            <header class="col-md-10 col-xl-8 mx-auto ">
+                <nav
+                    class="nav navbar-expand-lg navbar-dark border-bottom border-white py-3 d-flex align-items-baseline justify-content-between">
+                    <a class="navbar-brand" href="#">
+                        <img src="/src/odoo-white.svg" alt="" style="height: 20px;">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <ul class="navbar-nav justify-content-center jus">
+                        <li class="nav-item active mr-3">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item mr-3">
+                            <a class="nav-link" href="#">Products</a>
+                        </li>
+                        <li class="nav-item mr-3">
+                            <a class="nav-link" href="#">Pages</a>
+                        </li>
+                        <li class="nav-item mr-3">
+                            <a class="nav-link" href="#">App</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Docs</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active mr-3">
+                            <a class="nav-link" href="#">Sign In</span></a>
+                        </li>
+                        <form action="" class="form-inline">
+                            <button type="button" class="btn btn-light">
+                                <i class="bi bi-bag mr-1"></i>
+                                Buy now
+                            </button>
+                        </form>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div class="row">
+            <div class="col-md-10 col-xl-8 mx-auto py-5">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-7 text-white">
+                        <div class="row">
+                            <div class="col-8">
+                                <h1>Development done right</h1>
+                                <p>Build a beautiful, modern website with flexible components built from scratch.</p>
+                                <button type="button" class="btn btn-lg btn-light mt-3 mb-5">
+                                    <span class="pr-2">Get started</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-plus" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="col-12 ">
+                                <p class="pr-4 d-inline text-size-sm">Trust by:</p>
+                                <a class="pr-4" href="#"><img src="/src/google-white.svg" alt="Google logo"
+                                        height="20rem"></a>
+                                <a class="pr-4" href="#"><img src="/src/spotify-white.svg" alt="Spotify logo"
+                                        height="20rem"></a>
+                                <a class="pr-4" href="#"><img src="/src/airbnb-white.svg" alt="Airbnb logo"
+                                        height="20rem"></a>
+                                <a href="#"><img src="/src/paypal-white.svg" alt="Paypal logo" height="18rem"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="card containerbg-white p-4 rounded rounded-bottom-right-lg">
+                            <div class="d-flex justify-content-between align-items-baseline mb-3">
+                                <h6>Manage cards</h6>
+                                <button type="button" class="btn btn-outline-secondary">Add new</button>
+                            </div>
+                            <div
+                                class="bg-dark text-white credit-card d-flex flex-column justify-content-between rounded p-3 ">
+                                <div class="row mb-3">
+                                    <div class="col d-flex justify-content-between align-items-center">
+                                        <img src="/src/mastercard.svg" alt="Mastercard logo">
+                                        <span
+                                            class="d-inline bg-success text-white rounded px-2 py-1 text-size-sm">Active</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12"><span class="text-size-xs text-white-50">CARD NUMBER</span>
+                                    </div>
+                                    <div class="col-12"><span class="text-size-fit">4358 - 7421 - 9256 - 6682</span>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-2">
+                                    <div class="col-6"><span class="text-size-xs text-white-50">NAME</span></div>
+                                    <div class="col-6"><span class="text-size-xs text-white-50">EXPIRY DATE</span></div>
+                                    <div class="col-6"><span class="text-size-sm">John Snow</span></div>
+                                    <div class="col-6"><span class="text-size-sm">11/23</span></div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col">
+                                    <span class="text-size-sm font-weight-normal">Starbucks</span>
+                                </div>
+                                <div class="col">
+                                    <span class="text-size-sm text-right">$5,50 USD</span>
+                                </div>
+                                <div class="col-12">
+                                    <span class="text-size-sm text-body-50  border-bottom pb-3">Pending - San
+                                        Francisco, United States</span>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col">
+                                    <span class="text-size-sm font-weight-normal">Nike Sports</span>
+                                </div>
+                                <div class="col">
+                                    <span class="text-size-sm text-right">$129,00 USD</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="text-size-sm text-body-50 border-bottom pb-3">Pending -
+                                        Lisbon, Portugal</span>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col pb-2">
+                                    <a href="" class="text-primary text-size-sm text-underline-dash pb-1">View
+                                        all<i class="bi bi-chevron-right text-primary pl-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container-fluid bottom-container t-slope slope-primary">
+        <div class="col-md-10 col-xl-8 mx-auto">
+            <div class="row align-items-center container-quarter-circle">
+                <div class="col-7 position-relative projects">
+                    <div class="card shadow-lg px-4">
+                        <div class="card-body">
+                            <h6 class="w-100">Awesome projects</h6>
+                            <div class="row my-4">
+                                <div class="col text-size-sm d-flex justify-content-between">
+                                    <span class="font-weight-normal">Create the new logo</span>
+                                    <span class="text-body-50">3:50<i class="bi bi-chevron-right pl-1"></i></span>
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <div class="progress" style="height: 2px;">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 30%"
+                                            aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row my-4">
+                                <div class="col text-size-sm d-flex justify-content-between">
+                                    <span class="font-weight-normal">Set up the color palette</span>
+                                    <span class="text-body-50">4:00<i class="bi bi-chevron-right pl-1"></i></span>
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <div class="progress" style="height: 2px;">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 55%"
+                                            aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row my-4">
+                                <div class="col text-size-sm d-flex justify-content-between">
+                                    <span class="font-weight-normal">Wireframe and prototype</span>
+                                    <span class="text-body-50">6:50<i class="bi bi-chevron-right pl-1"></i></span>
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <div class="progress" style="height: 2px;">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%"
+                                            aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position-absolute card-video">
+                        <div class="video-player">
+                            <img src="/src/img_01.jpg" alt="" class="w-100 rounded shadow">
+                            <button type="button" class="btn btn btn-light btn-player-right">Play video<i
+                                    class="bi bi-play ml-2"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <span class="badge badge-pill badge-warning text-white mb-3">Tools</span>
+                    <h2>We build for designers and developers</h2>
+                    <p class="text-body-50">Get components and examples, including tons of variables that will help
+                        you grow your business.</p>
+                </div>
+                <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 278 278"
+                    style="enable-background:new 0 0 278 278;" xml:space="preserve" class="quarter-circle circle-left col-3">
+                    <path class="st0" d="M278.2,278.2C124.4,278.2-0.2,153.6-0.2-0.2" />
+                </svg>
+            </div>
+
+
+            <div class="row align-items-center justify-content-between container-quarter-circle">
+                <div class="col-5">
+                    <span class="badge badge-pill badge-success text-white mb-3">Features</span>
+                    <p class="text-body font-weight-normal mb-5">Get components and examples, including tons of
+                        variables that will help you grow your business.</p>
+                    <div class="w-100 text-success text-size-sm mb-2"><i
+                            class="bi bi-check-square-fill pr-3"></i>Perfect for modern startups</div>
+                    <div class="w-100 text-success text-size-sm"><i class="bi bi-check-square-fill pr-3"></i>Fully
+                        customizable and scalable</div>
+
+                </div>
+                <div class="col-6 card-video">
+                    <div class="video-player">
+                        <img src="/src/img_02.jpg" alt="" class="w-100 rounded shadow">
+                        <button type="button" class="btn btn btn-light btn-player-left">Play video<i
+                                class="bi bi-play ml-2"></i></button>
+                    </div>
+                </div>
+                <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 278 278"
+                    style="enable-background:new 0 0 278 278;" xml:space="preserve" class="quarter-circle circle-right col-3">
+                    <path class="st0" d="M-0.2,278.2c153.8,0,278.5-124.7,278.5-278.5"/>
+                </svg>
+            </div>
+
+            <div class="row align-items-center justify-content-between container-quarter-circle">
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-6 align-self-center">
+                            <div class="card shadow-sm mb-3">
+                                <img src="/src/person_03.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <div class="row justify-content-between ">
+                                        <div class="d-flex align-items-center">
+                                            <div class="bg-warning rounded-circle text-white text-size-xs d-flex mr-2">
+                                                JH</div>
+                                            <span class="card-text text-size-sm font-weight-normal">Jimmy Hendrix</span>
+                                        </div>
+                                        <div class="d-flex justify-content-end align-items-center">
+                                            <i class="bi bi-heart text-size-sm"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card shadow-sm">
+                                <div class="card-body">
+                                    <div class="row justify-content-between ">
+                                        <div class="d-flex align-items-center">
+                                            <div
+                                                class="bg-success rounded-circle circle-lg text-white text-size-lg d-flex">
+                                                <i class="bi bi-check"></i>
+                                            </div>
+                                            <div class="col d-flex flex-column">
+                                                <span class="text-size-sm font-weight-normal">300+ components</span>
+                                                <span class="text-size-sm font-weight-normal text-body-50">Built to be
+                                                    customized.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 align-self-center">
+                            <div class="card shadow-sm mb-3">
+                                <div class="card-body d-flex flex-column align-items-center py-5">
+                                    <div class="w-50 mb-3"><img src="/src/airbnb.svg" alt=""></div>
+                                    <div class="mb-3 text-size-sm">
+                                        <i class="bi bi-star text-warning"></i>
+                                        <i class="bi bi-star text-warning"></i>
+                                        <i class="bi bi-star text-warning"></i>
+                                        <i class="bi bi-star text-warning"></i>
+                                        <i class="bi bi-star text-secondary"></i>
+                                    </div>
+                                    <span class="text-size-sm font-weight-normal">4.95 out of 5 stars</span>
+                                    <span class="text-body-50 text-size-xs">from 23 reviews</span>
+                                </div>
+                            </div>
+                            <div class="card shadow-sm">
+                                <div class="card-body d-flex flex-column align-items-center">
+                                    <img class="rounded-circle circle-xl mb-3" src="/src/company_01.png" alt="">
+                                    <span class="text-size-sm font-weight-normal mb-3">Website UI Kit</span>
+                                    <div class="d-flex justify-content-center mb-3">
+                                        <img class="rounded-circle circle-lg" src="/src/person_01.jpg" alt="">
+                                        <img class="rounded-circle circle-lg border border-white mx-n2"
+                                            src="/src/person_02.jpg" alt="">
+                                        <img class="rounded-circle circle-lg border border-white"
+                                            src="/src/person_03.jpg" alt="">
+                                    </div>
+                                    <div class="w-50 d-flex justify-content-between border-gradient pt-3 mb-2">
+                                        <i class="bi bi-paperclip text-size-sm"></i>
+                                        <i class="bi bi-eye text-size-sm"></i>
+                                        <i class="bi bi-heart text-size-sm"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <span class="badge badge-pill badge-primary text-white mb-3">Technology</span>
+                    <h2>We use the latest technologies on the market</h2>
+                    <p class="text-body-50">Get components and examples, including tons of variables that will help you
+                        grow your business.</p>
+                    <a class="text-size-sm text-underline-solid" href="#">See case studies</a>
+                </div>
+                <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 278 278"
+                    style="enable-background:new 0 0 278 278;" xml:space="preserve" class="quarter-circle circle-right col-3">
+                    <path class="st0" d="M278.2,278.2C124.4,278.2-0.2,153.6-0.2-0.2" />
+                </svg>
+            </div>
+
+            <div class="row align-items-center justify-content-between container-quarter-circle">
+                <div class="col-5">
+                    <span class="badge badge-pill badge-warning text-white mb-3">Easy to install</span>
+                    <h2>Download, install and run.</h2>
+                    <p class="text-body-50">Get components and examples, including tons of variables that will help you
+                        grow your business.</p>
+                    <div class="row">
+                        <div class="col d-flex mt-4">
+                            <button class="btn btn-black btn-store d-flex align-items-center text-white mr-4">
+                                <i class="bi bi-apple mr-2 "></i>
+                                <div class="d-flex flex-column">
+                                    <span>Download on the</span>
+                                    <span>App Store</span>
+                                </div>
+                            </button>
+                            <button class="btn btn-black btn-store d-flex align-items-center text-white">
+                                <i class="bi bi-google-play mr-2 "></i>
+                                <div class="d-flex flex-column">
+                                    <span>Download on the</span>
+                                    <span>Play Store</span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 card-video">
+                    <div class="video-player">
+                        <img src="/src/img_03.jpg" alt="" class="w-100 rounded shadow">
+                        <button type="button" class="btn btn btn-light btn-player-left">Play video<i
+                                class="bi bi-play ml-2"></i></button>
+                    </div>
+                </div>
+                <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 278 278"
+                    style="enable-background:new 0 0 278 278;" xml:space="preserve" class="quarter-circle circle-left col-3">
+                    <path class="st0" d="M-0.2,278.2c153.8,0,278.5-124.7,278.5-278.5"/>
+                </svg>
+            </div>
+            <div
+                class="row bg-dark justify-content-between align-items-center rounded-top-right-lg rounded-bottom-left-lg p-5">
+                <div class="col-7 my-3">
+                    <h2 class="text-white">Infinite solutions</h2>
+                    <p class="text-white">Intuitive markup, powerful and lightning-fast build tools,
+                        everything you need to turn your ideas into incredible products.</p>
+                </div>
+                <button type="button" class="btn btn-lg btn-light">
+                    <span class="pr-2">Learn more</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid bg-secondary-25">
+        <div class="col-md-10 col-xl-8 mx-auto">
+            <div class="row pt-5">
+                <div class="col">
+                    <span class="badge badge-pill badge-primary text-white mb-3">Awards</span>
+                    <p class="font-weight-normal">Awards for design, creativity, and innovation on the Internet</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-awards">
+            <div class="col-md-10 col-xl-8 mx-auto">
+                <div class="row awards flex-nowrap py-5">
+                    <div class="col-3">
+                        <a href="https://fr.airbnb.be/" target="_blank">
+                            <div class="card shadow-sm mb-3">
+                                <div class="card-body d-flex flex-column align-items-center py-5">
+                                    <div class="w-50 mb-3"><img src="/src/airbnb.svg" alt=""></div>
+                                    <div class="mb-3 text-size-sm">
+                                        <i class="bi bi-star text-warning"></i>
+                                        <i class="bi bi-star text-warning"></i>
+                                        <i class="bi bi-star text-warning"></i>
+                                        <i class="bi bi-star text-warning"></i>
+                                        <i class="bi bi-star text-secondary"></i>
+                                    </div>
+                                    <span class="text-dark text-size-sm font-weight-normal">4.95 out of 5 stars</span>
+                                    <span class="text-body-50 text-size-xs">from 23 reviews</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="https://www.amazon.com.be/?language=fr_BE" target="_blank">
+                            <div class="card shadow-sm mb-3">
+                                <div class="card-body d-flex flex-column align-items-center py-5">
+                                    <div class="w-50 mb-3"><img src="/src/amazon.svg" alt=""></div>
+                                    <p class="text-size-sm text-center text-black-50">They build modern-looking websites
+                                        easily using Tabs.</p>
+                                    <span class="text-size-sm text-dark text-underline-solid" href="#">Learn more</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="https://slack.com/intl/fr-be/" target="_blank">
+                            <div class="card shadow-sm mb-3">
+                                <div class="card-body d-flex flex-column align-items-center py-5">
+                                    <div class="w-50 mb-3"><img src="/src/slack.svg" alt=""></div>
+                                    <p class="text-size-sm text-center text-black-50">They build modern-looking websites
+                                        easily using Tabs.</p>
+                                    <span class="text-size-sm text-dark text-underline-solid" href="#">Learn more</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="https://open.spotify.com/" target="_blank">
+                            <div class="card shadow-sm mb-3">
+                                <div class="card-body d-flex flex-column align-items-center py-5">
+                                    <div class="w-50 mb-3"><img src="/src/spotify.svg" alt=""></div>
+                                    <div class="mb-3 text-size-sm">
+                                        <i class="bi bi-star text-warning"></i>
+                                        <i class="bi bi-star text-warning"></i>
+                                        <i class="bi bi-star text-warning"></i>
+                                        <i class="bi bi-star text-warning"></i>
+                                        <i class="bi bi-star text-secondary"></i>
+                                    </div>
+                                    <span class="text-dark text-size-sm font-weight-normal">4.95 out of 5 stars</span>
+                                    <span class="text-body-50 text-size-xs">from 23 reviews</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="https://www.paypal.com/fr/home" target="_blank">
+                            <div class="card shadow-sm mb-3">
+                                <div class="card-body d-flex flex-column align-items-center py-5">
+                                    <div class="w-50 mb-3"><img src="/src/paypal.svg" alt=""></div>
+                                    <p class="text-size-sm text-center text-black-50">They build modern-looking websites
+                                        easily using Tabs.</p>
+                                    <span class="text-size-sm text-dark text-underline-solid">Learn more</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid t-slope slope-secondary-25">
+        <div class="col-md-10 col-xl-8 mx-auto">
+            <div class="row py-5">
+                <div class="col-12 text-center mt-5">
+                    <h2>Helpful answers</h2>
+                    <p class="text-black-50">Start building fast, beautiful, and modern-looking websites in no time.
+                    </p>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-6 accordion" id="accordionLeft">
+                    <div class="card shadow-sm">
+                        <div class="card-header" id="headingOne">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                aria-controls="collapseOne">
+                                <div class="row justify-content-between ">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-file-earmark text-size-sm mr-2"></i>
+                                        <h4 class="mb-0">Which license do I need?</h4>
+                                    </div>
+                                    <div class="d-flex justify-content-end align-items-center">
+                                        <i class="collapse-icon"></i>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                            data-parent="#accordionLeft">
+                            <div class="card-body">
+                                <p>I needed to change the world. I wanted to ... You know how it is when you are
+                                    young; you have big dreams, a lot of energy and naive stupidity. My dream was to
+                                    lead the enterprise management market with a fully open source software. (I also
+                                    wanted to get 100 employees before 30 years old with a self-financed company but
+                                    I failed this one by only a few months).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow-sm">
+                        <div class="card-header" id="headingTwo">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                                aria-controls="collapseTwo">
+                                <div class="row justify-content-between ">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-lock text-size-sm mr-2"></i>
+                                        <h4 class="mb-0">How do I get access to my database?</h4>
+                                    </div>
+                                    <div class="d-flex justify-content-end align-items-center">
+                                        <i class="collapse-icon"></i>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            data-parent="#accordionLeft">
+                            <div class="card-body">
+                                <p>To make things happen, I worked hard, very hard. I worked 13 hours a day, 7 days a
+                                    week, with no vacations for 7 years. I lost friendships and broke up with my
+                                    girlfriend in the process (fortunately, I found a more valuable wife now. I will
+                                    explain later why she is worth 1 million EUR :).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow-sm">
+                        <div class="card-header" id="headingThree">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                data-toggle="collapse" data-target="#collapseThree" aria-expanded="true"
+                                aria-controls="collapseTree">
+                                <div class="row justify-content-between ">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-folder text-size-sm mr-2"></i>
+                                        <h4 class="mb-0">How do I see previous orders?</h4>
+                                    </div>
+                                    <div class="d-flex justify-content-end align-items-center">
+                                        <i class="collapse-icon"></i>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordionLeft">
+                            <div class="card-body">
+                                <p>To move forward, we raised USD 10 million in May 2014 in order to boost marketing
+                                    and sales activities. In order to support our vision, we had to change the name that
+                                    is not restricted to ERPs functions. We needed a name that allows to support our
+                                    ambitions; build business solutions like CMS, eCommerce, Business Intelligence and,
+                                    who knows, even sky rockets or driverless cars in the future...</p>
+
+                                <p>In May 2014, we renamed the company and product to Odoo. And a new story just
+                                    started...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 accordion" id="accordionRight">
+                    <div class="card shadow-sm">
+                        <div class="card-header" id="headingFour">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                data-toggle="collapse" data-target="#collapseFour" aria-expanded="true"
+                                aria-controls="collapseFour">
+                                <div class="row justify-content-between ">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-file-earmark text-size-sm mr-2"></i>
+                                        <h4 class="mb-0">Which license do I need?</h4>
+                                    </div>
+                                    <div class="d-flex justify-content-end align-items-center">
+                                        <i class="collapse-icon"></i>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                            data-parent="#accordionRight">
+                            <div class="card-body">
+                                <p>I needed to change the world. I wanted to ... You know how it is when you are
+                                    young; you have big dreams, a lot of energy and naive stupidity. My dream was to
+                                    lead the enterprise management market with a fully open source software. (I also
+                                    wanted to get 100 employees before 30 years old with a self-financed company but
+                                    I failed this one by only a few months).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow-sm">
+                        <div class="card-header" id="headingFive">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                data-toggle="collapse" data-target="#collapseFive" aria-expanded="true"
+                                aria-controls="collapseFive">
+                                <div class="row justify-content-between ">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-lock text-size-sm mr-2"></i>
+                                        <h4 class="mb-0">How do I get access to my database?</h4>
+                                    </div>
+                                    <div class="d-flex justify-content-end align-items-center">
+                                        <i class="collapse-icon"></i>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                            data-parent="#accordionRight">
+                            <div class="card-body">
+                                <p>To make things happen, I worked hard, very hard. I worked 13 hours a day, 7 days a
+                                    week, with no vacations for 7 years. I lost friendships and broke up with my
+                                    girlfriend in the process (fortunately, I found a more valuable wife now. I will
+                                    explain later why she is worth 1 million EUR :).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow-sm">
+                        <div class="card-header" id="headingSix">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                data-toggle="collapse" data-target="#collapseSix" aria-expanded="true"
+                                aria-controls="collapseTree">
+                                <div class="row justify-content-between ">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-folder text-size-sm mr-2"></i>
+                                        <h4 class="mb-0">How do I see previous orders?</h4>
+                                    </div>
+                                    <div class="d-flex justify-content-end align-items-center">
+                                        <i class="collapse-icon"></i>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                            data-parent="#accordionRight">
+                            <div class="card-body">
+                                <p>To move forward, we raised USD 10 million in May 2014 in order to boost marketing
+                                    and sales activities. In order to support our vision, we had to change the name that
+                                    is not restricted to ERPs functions. We needed a name that allows to support our
+                                    ambitions; build business solutions like CMS, eCommerce, Business Intelligence and,
+                                    who knows, even sky rockets or driverless cars in the future...</p>
+
+                                <p>In May 2014, we renamed the company and product to Odoo. And a new story just
+                                    started...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center my-5">
+                    <p class="font-weight-normal">I want to start a new project.</p>
+                    <button type="button" class="btn btn-lg btn-primary text-white">
+                        <span class="pr-2">Buy now</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </button>
+                    <a href="#" class="text-size-sm text-dark ml-4">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid bg-dark t-slope slope-light">
+        <div class="col-md-10 col-xl-8 mx-auto pt-5">
+            <div class="row justify-content-between py-5">
+                <div class="col-6">
+                    <h2 class="text-white m-0">Brilliant solutions for your ideas</h2>
+                    <p class="text-white-50">Modern-looking websites.</p>
+                </div>
+                <div class="d-flex align-items-center">
+                    <button type="button" class="btn btn-lg btn-light mr-3">
+                        <i class="bi bi-book text-primary pr-2"></i>
+                        <span>Documentation</span>
+                    </button>
+                    <button type="button" class="btn btn-lg btn-primary text-white">
+                        <span class="pr-2">Learn more</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 border-gradient border-opacity-25 text-white py-5">
+                    <div class="row justify-content-between">
+                        <div class="col-5">
+                            <img class="w-25 mb-3" src="/src/odoo-white.svg" alt="">
+                            <p class="text-size-sm text-white-50">
+                                Odoo attempts to bring the best development experience to designers and developers by
+                                offering the tools needed for having a quick and solid start in most web projects.
+                            </p>
+                            <div class="text-size-sm">
+                                <a class="text-white-50" href="https://dribbble.com/OdooBe" target="_blank"><i
+                                        class="bi bi-dribbble mr-4"></i></a>
+                                <a class="text-white-50" href="https://github.com/odoo/odoo" target="_blank"><i
+                                        class="bi bi-github mr-4"></i></a>
+                                <a class="text-white-50" href="https://www.instagram.com/odoo.official/"
+                                    target="_blank"><i class="bi bi-instagram mr-4"></i></a>
+                                <a class="text-white-50" href="https://www.facebook.com/odoo" target="_blank"><i
+                                        class="bi bi-facebook"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="row">
+                                <ul class="col-4 d-flex flex-column list-unstyled text-white">
+                                    <li class=" mb-1"><a class="text-white mb-2" href="#">Account</a></li>
+                                    <li><a class="text-size-sm font-weight-light text-white-50 mb-1"
+                                            href="#">Profile</a></li>
+                                    <li><a class="text-size-sm font-weight-light text-white-50 mb-1"
+                                            href="#">Settings</a></li>
+                                    <li><a class="text-size-sm font-weight-light text-white-50 mb-1"
+                                            href="#">Billing</a></li>
+                                    <li><a class="text-size-sm font-weight-light text-white-50"
+                                            href="#">Notifications</a></li>
+                                </ul>
+                                <ul class="col-4 d-flex flex-column list-unstyled text-white">
+                                    <li class=" mb-1"><a class="text-white mb-2" href="#">About</a></li>
+                                    <li><a class="text-size-sm font-weight-light text-white-50 mb-1"
+                                            href="#">Services</a></li>
+                                    <li><a class="text-size-sm font-weight-light text-white-50 mb-1"
+                                            href="#">Pricing</a></li>
+                                    <li><a class="text-size-sm font-weight-light text-white-50 mb-1"
+                                            href="#">Contact</a></li>
+                                    <li><a class="text-size-sm font-weight-light text-white-50" href="#">Career</a></li>
+                                </ul>
+                                <ul class="col-4 d-flex flex-column list-unstyled text-white">
+                                    <li class=" mb-1"><a class="text-white" href="#">Company</a></li>
+                                    <li><a class="text-size-sm font-weight-light text-white-50" href="#">Community</a>
+                                    </li>
+                                    <li><a class="text-size-sm font-weight-light text-white-50" href="#">Help center</a>
+                                    </li>
+                                    <li><a class="text-size-sm font-weight-light text-white-50" href="#">Support</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 border-gradient border-opacity-25 text-white py-4">
+                    <div class="row justify-content-between">
+                        <div class="col text-size-xs"><span class="font-weight-normal">© Odoo.</span> All rights
+                            reserved</div>
+                        <div>
+                            <ul class="text-size-xs list-unstyled d-flex ">
+                                <li><a class="text-white-50 mr-4" href="#">Terms</a></li>
+                                <li><a class="text-white-50 mr-4" href="#">Privacy</a></li>
+                                <li><a class="text-white-50" href="#">Cookies</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

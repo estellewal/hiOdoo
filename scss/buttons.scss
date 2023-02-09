@@ -1,0 +1,79 @@
+.btn {
+    color: $dark;
+    padding: 0.375rem 1rem;
+    font-size: 0.8rem;
+    border-radius: $border-radius-sm;
+}
+
+.btn-lg,
+.btn-group-lg>.btn {
+    padding: 0.75rem 1.5rem;
+}
+
+.btn-sm,
+.btn-group-sm>.btn {
+    padding: 0.05rem 0.25rem;
+}
+
+.btn-light {
+    color: $dark;
+    background-color: $white;
+    border-color: $white;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        color: $white;
+        background-color: unset;
+
+        i {
+            color: $white !important;
+        }
+    }
+
+    &.btn-player-left:hover,
+    &.btn-player-right:hover {
+        color: $white;
+        background-color: $dark;
+        border-color: $dark;
+    }
+
+}
+
+.btn-success {
+    color: $white;
+}
+
+.btn-outline-secondary {
+    border-width: 2px;
+}
+
+.btn-black {
+    color: $white;
+    background-color: $black;
+    border-color: $black;
+}
+
+.btn-black:hover {
+    color: $white;
+    background-color: $dark;
+    border-color: $dark;
+}
+
+.btn-store {
+    padding: 0.2rem 1.5rem;
+    border-radius: $border-radius-sm;
+
+    i {
+        font-size: 1.4rem;
+    }
+
+    span {
+        font-size: 0.85rem;
+        line-height: 1rem;
+
+        &:first-child {
+            font-size: 0.5rem;
+            line-height: 0.8rem;
+        }
+    }
+}
