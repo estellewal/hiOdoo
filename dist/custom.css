@@ -9479,7 +9479,7 @@ a.text-dark:hover {
 
 .credit-card {
   aspect-ratio: 3/2;
-  background-image: url("/src/credit-card-background.svg");
+  background-image: url("../src/credit-card-background.svg");
   background-size: cover;
 }
 
